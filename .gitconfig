@@ -1,0 +1,7 @@
+[alias]
+	put = push origin HEAD -u
+	reauth = commit --amen --reset-author -CHEAD
+	st = status
+[user]
+	name = Mark McEahern
+	email = mark@mceahern.com
