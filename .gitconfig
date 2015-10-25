@@ -2,6 +2,7 @@
 	ap = add --patch
 	c = commit -m
 	co = checkout
+	cop = checkout --patch
 	dc = diff --cached
 	d = diff
 	l = log
