@@ -1,6 +1,9 @@
 [alias]
+	ap = add --patch
+	co = checkout
 	put = push origin HEAD -u
 	reauth = commit --amen --reset-author -CHEAD
+	s = status
 	st = status
 [user]
 	name = Mark McEahern
