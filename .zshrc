@@ -89,3 +89,7 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# Postgres
+alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
