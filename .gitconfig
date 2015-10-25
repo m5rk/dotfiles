@@ -12,3 +12,5 @@
 [user]
 	name = Mark McEahern
 	email = mark@mceahern.com
+[interactive]
+	singlekey = true
