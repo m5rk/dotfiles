@@ -54,6 +54,10 @@ plugins=(git wd)
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Go 1.4
+export PATH=$PATH:/usr/local/opt/go14/libexec/bin
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
