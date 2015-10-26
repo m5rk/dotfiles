@@ -96,3 +96,7 @@ alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 export GOPATH=$HOME/.go
 export GOBIN=$GOPATH/bin
+
+if [ -e "$HOME/.zshrc.local" ]; then
+  source "$HOME/.zshrc.local"
+fi
