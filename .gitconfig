@@ -27,7 +27,9 @@
 
 [interactive]
 	singlekey = true
+
 [push]
 	default = simple
+
 [core]
 	excludesfile = /Users/markmceahern/.gitignore_global
