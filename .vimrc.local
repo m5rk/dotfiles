@@ -1,2 +1,8 @@
-
 syntax on
+
+if !isdirectory("~/.vimbackupdir")
+  call mkdir("~/.vimbackupdir", "p")
+endif
+
+set backupdir=~/.vimbackupdir,~/tmp,~/,.
+set directory=~/.vimbackupdir,~/tmp,~/,.
