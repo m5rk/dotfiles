@@ -1,7 +1,7 @@
 syntax on
 
-if !isdirectory("~/.vimbackupdir")
-  call mkdir("~/.vimbackupdir", "p")
+if !isdirectory(expand("~/.vimbackupdir"))
+  call mkdir(expand("~/.vimbackupdir"), "p")
 endif
 
 set backupdir=~/.vimbackupdir,~/tmp,~/,.
