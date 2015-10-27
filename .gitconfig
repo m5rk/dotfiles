@@ -9,18 +9,19 @@
 
 [alias]
 	ap = add --patch
+	br = branch
 	c = commit -m
+	ci = commit
 	co = checkout
 	cop = checkout --patch
-	dc = diff --cached
 	d = diff
+	dc = diff --cached
 	fo = fetch --verbose --prune origin
 	l = log
 	put = push origin HEAD -u
 	reauth = commit --amen --reset-author -CHEAD
 	s = status
 	st = status
-	br = branch
 
 [interactive]
 	singlekey = true
