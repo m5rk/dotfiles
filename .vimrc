@@ -9,6 +9,7 @@ Plugin 'gmarik/vundle'
 Plugin 'fatih/vim-go'
 
 " files/search/buffers
+Plugin 'ervandew/supertab'
 Plugin 'mileszs/ack.vim'
 
 call vundle#end()
