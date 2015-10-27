@@ -8,6 +8,9 @@ Plugin 'gmarik/vundle'
 " syntax
 Plugin 'fatih/vim-go'
 
+" files/search/buffers
+Plugin 'mileszs/ack.vim'
+
 call vundle#end()
 filetype plugin indent on
 
