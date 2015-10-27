@@ -5,6 +5,9 @@ call vundle#begin()
 
 Plugin 'gmarik/vundle'
 
+" syntax
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 
