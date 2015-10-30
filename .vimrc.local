@@ -9,6 +9,8 @@ set backupdir=~/.vimbackupdir,~/tmp,~/,.
 " The 'directory' option controls where swap files go.
 set directory=~/.vimbackupdir,~/tmp,~/,.
 
+autocmd BufWritePre * StripWhitespace
+
 set autoindent
 set expandtab
 set shiftwidth=2
