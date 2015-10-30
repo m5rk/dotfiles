@@ -11,6 +11,11 @@ set directory=~/.vimbackupdir,~/tmp,~/,.
 
 autocmd BufWritePre * StripWhitespace
 
+augroup reload_vimrc " {
+  autocmd!
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
+
 set autoindent
 set expandtab
 set shiftwidth=2
