@@ -90,6 +90,9 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
 
+# Ruby / Rails
+alias be="bundle exec"
+
 # Postgres
 alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
@@ -100,6 +103,11 @@ export GOBIN=$GOPATH/bin
 if [ -e ~/Repo/rylnd/dotfiles/scripts/pair ]; then
   source ~/Repo/rylnd/dotfiles/scripts/pair
 fi
+
+export NVM_DIR="~/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+export BUNDLER_EDITOR=vim
 
 if [ -e "$HOME/.zshrc.local" ]; then
   source "$HOME/.zshrc.local"
