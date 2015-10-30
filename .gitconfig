@@ -1,35 +1,35 @@
 [url "git@github.com:m5rk/"]
-	insteadOf = "git://github.com/m5rk/"
+  insteadOf = "git://github.com/m5rk/"
 
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 
 [include]
-	path = ~/.config/git/local/git-credentials
+  path = ~/.config/git/local/git-credentials
 
 [alias]
-	ap = add --patch
-	br = branch
-	c = commit -m
-	ci = commit
-	co = checkout
-	cop = checkout --patch
-	d = diff
-	dc = diff --cached
-	fo = fetch --verbose --prune origin
-	l = log
-	put = push origin HEAD -u
-	reauth = commit --amen --reset-author -CHEAD
-	s = status
-	st = status
+  ap = add --patch
+  br = branch
+  c = commit -m
+  ci = commit
+  co = checkout
+  cop = checkout --patch
+  d = diff
+  dc = diff --cached
+  fo = fetch --verbose --prune origin
+  l = log
+  put = push origin HEAD -u
+  reauth = commit --amen --reset-author -CHEAD
+  s = status
+  st = status
 
   delete-merged = !sh -c '(git fetch -p && git branch --merged | grep -v "\\*" | grep -v 'master' | grep -v 'develop' | xargs -n1 git branch -d)' -
 
 [interactive]
-	singlekey = true
+  singlekey = true
 
 [push]
-	default = simple
+  default = simple
 
 [core]
-	excludesfile = /Users/markmceahern/.gitignore_global
+  excludesfile = /Users/markmceahern/.gitignore_global
