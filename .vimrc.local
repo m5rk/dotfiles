@@ -5,6 +5,8 @@ if !isdirectory(expand("~/.vimbackupdir"))
 endif
 
 set backupdir=~/.vimbackupdir,~/tmp,~/,.
+
+" The 'directory' option controls where swap files go.
 set directory=~/.vimbackupdir,~/tmp,~/,.
 
 set autoindent
