@@ -19,6 +19,8 @@
   fo = fetch --verbose --prune origin
   l = log
   put = push origin HEAD -u
+  rbc = rebase --continue
+  rbi = rebase --interactive
   reauth = commit --amen --reset-author -CHEAD
   s = status
   st = status
@@ -33,3 +35,5 @@
 
 [core]
   excludesfile = /Users/markmceahern/.gitignore_global
+[rebase]
+  autosquash = true
