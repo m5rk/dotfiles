@@ -7,10 +7,19 @@ Plugin 'gmarik/vundle'
 
 " syntax
 Plugin 'fatih/vim-go'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-rails'
 
 " files/search/buffers
 Plugin 'ervandew/supertab'
 Plugin 'mileszs/ack.vim'
+
+" editing
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-surround'
+
+" formatting
+Plugin 'ntpeters/vim-better-whitespace'
 
 call vundle#end()
 filetype plugin indent on
