@@ -20,6 +20,10 @@ Plugin 'tpope/vim-surround'
 
 " formatting
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-commentary'
+
+" git
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
