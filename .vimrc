@@ -12,7 +12,9 @@ Plugin 'tpope/vim-rails'
 
 " files/search/buffers
 Plugin 'ervandew/supertab'
+Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
 
 " editing
 Plugin 'tpope/vim-endwise'

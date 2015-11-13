@@ -21,6 +21,7 @@
   put = push origin HEAD -u
   rbc = rebase --continue
   rbi = rebase --interactive
+  rh = reset --hard
   reauth = commit --amen --reset-author -CHEAD
   s = status
   st = status

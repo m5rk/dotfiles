@@ -97,11 +97,18 @@ alias be="bundle exec"
 alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-export GOPATH=$HOME/.go
+# Docker
+alias dcom='docker-compose'
+
+export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
 if [ -e ~/Repo/rylnd/dotfiles/scripts/pair ]; then
   source ~/Repo/rylnd/dotfiles/scripts/pair
+fi
+
+if [ -e ~/.zshrc.local ]; then
+  source ~/.zshrc.local
 fi
 
 export NVM_DIR="~/.nvm"
@@ -109,6 +116,9 @@ export NVM_DIR="~/.nvm"
 
 export BUNDLER_EDITOR=vim
 
-if [ -e "$HOME/.zshrc.local" ]; then
-  source "$HOME/.zshrc.local"
-fi
+eval "$(docker-machine env default)"
+
+alias reload="source ~/.zshrc"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
