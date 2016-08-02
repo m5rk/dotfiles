@@ -9,6 +9,8 @@ Plugin 'gmarik/vundle'
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-rails'
+Plugin 'kylef/apiblueprint.vim'
+Plugin 'leafgarland/typescript-vim'
 
 " files/search/buffers
 Plugin 'ervandew/supertab'
