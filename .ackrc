@@ -1,3 +1,5 @@
+--ignore-case
+
 --ignore-dir=.vendor
 --ignore-dir=coverage
 --ignore-dir=log
