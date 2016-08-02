@@ -55,10 +55,15 @@ plugins=(git wd)
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Go 1.4
-export PATH=$PATH:/usr/local/opt/go14/libexec/bin
+# Araxis
+export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
 
 # export MANPATH="/usr/local/man:$MANPATH"
+
+export ANDROID_SDK_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_SDK_HOME}/platform-tools:${ANDROID_SDK_HOME}/tools
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=${JAVA_HOME}/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,28 +102,16 @@ alias be="bundle exec"
 alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
-# Docker
-alias dcom='docker-compose'
-
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-
-if [ -e ~/Repo/rylnd/dotfiles/scripts/pair ]; then
-  source ~/Repo/rylnd/dotfiles/scripts/pair
-fi
-
-if [ -e ~/.zshrc.local ]; then
-  source ~/.zshrc.local
-fi
-
-export NVM_DIR="~/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-
 export BUNDLER_EDITOR=vim
-
-eval "$(docker-machine env default)"
 
 alias reload="source ~/.zshrc"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
+
+if [ -e ~/.zshrc.local ]; then
+  source ~/.zshrc.local
+fi
