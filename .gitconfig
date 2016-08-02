@@ -44,4 +44,4 @@
 [rebase]
   autosquash = true
 [merge]
-	tool = araxis
+  tool = araxis
