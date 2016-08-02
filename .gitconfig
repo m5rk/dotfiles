@@ -14,13 +14,16 @@
   ci = commit
   co = checkout
   cop = checkout --patch
+  cp = cherry-pick
   d = diff
   dc = diff --cached
+  fa = fetch --verbose --prune --all
   fo = fetch --verbose --prune origin
   l = log
   put = push origin HEAD -u
   rbc = rebase --continue
   rbi = rebase --interactive
+  rbs = rebase --skip
   rh = reset --hard
   reauth = commit --amen --reset-author -CHEAD
   s = status
@@ -40,3 +43,5 @@
   excludesfile = /Users/markmceahern/.gitignore_global
 [rebase]
   autosquash = true
+[merge]
+	tool = araxis
