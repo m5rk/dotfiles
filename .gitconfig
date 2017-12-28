@@ -46,3 +46,5 @@
   autosquash = true
 [merge]
   tool = araxis
+[credential]
+  helper = osxkeychain
