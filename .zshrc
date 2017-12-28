@@ -61,9 +61,12 @@ export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
 # export MANPATH="/usr/local/man:$MANPATH"
 
 export ANDROID_SDK_HOME=${HOME}/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_SDK_HOME}/platform-tools:${ANDROID_SDK_HOME}/tools
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_SDK_HOME}/platform-tools
+export PATH=${PATH}:${ANDROID_SDK_HOME}/tools
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${JAVA_HOME}/bin:$PATH
+export PATH="$HOME/.fastlane/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
