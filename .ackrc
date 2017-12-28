@@ -1,7 +1,10 @@
 --ignore-case
 
+--ignore-file=is:tags
+--ignore-dir=.git
 --ignore-dir=.vendor
 --ignore-dir=coverage
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor
+--ignore-dir=public
