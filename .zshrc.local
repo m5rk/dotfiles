@@ -11,9 +11,33 @@ today() {
   subl $filename
 }
 
-export PATH="/Users/markmceahern/.pyenv/bin:$PATH"
+# my bin, then homebrew bin
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Araxis
+export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
+
+# Python
+export PATH=$HOME/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# Ruby / Rails
+alias be="bundle exec"
+
+export BUNDLER_EDITOR=vim
+
+alias reload="source ~/.zshrc"
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook

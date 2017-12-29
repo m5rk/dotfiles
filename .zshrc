@@ -95,26 +95,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-
-# Ruby / Rails
-alias be="bundle exec"
-
-# Postgres
-alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
-export BUNDLER_EDITOR=vim
-
-alias reload="source ~/.zshrc"
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
-
-bindkey "^[^[[D" backward-word
-bindkey "^[^[[C" forward-word
-
-if [ -e ~/.zshrc.local ]; then
-  source ~/.zshrc.local
-fi
