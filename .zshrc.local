@@ -1,5 +1,5 @@
 today() {
-  cd ~/Dropbox/journal
+  cd ~/journal
 
   filename=$(date '+%Y-%m-%d.txt')
 
