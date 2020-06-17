@@ -97,3 +97,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/markmceahern/.sdkman"
+[[ -s "/Users/markmceahern/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/markmceahern/.sdkman/bin/sdkman-init.sh"

@@ -7,4 +7,6 @@
 --ignore-dir=log
 --ignore-dir=tmp
 --ignore-dir=vendor
+--ignore-dir=node_modules
+--ignore-dir=client
 --ignore-dir=public

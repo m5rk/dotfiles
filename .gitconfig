@@ -21,6 +21,7 @@
   fo = fetch --verbose --prune origin
   l = log
   put = push origin HEAD -u
+  putf = push origin HEAD -u --force-with-lease
   rba = rebase --abort
   rbc = rebase --continue
   rbi = rebase --interactive
