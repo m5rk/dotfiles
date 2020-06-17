@@ -17,11 +17,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Araxis
 export PATH=/Applications/Araxis\ Merge.app/Contents/Utilities:$PATH
 
-# Python
-export PATH=$HOME/.pyenv/bin:$PATH
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/opt/chruby/share/chruby/auto.sh
