@@ -18,14 +18,15 @@ today() {
 }
 
 # my bin, then homebrew bin
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export BREW=`brew --prefix`
+export PATH=$HOME/bin:$BREW/bin:$PATH
 
 # Araxis
 export PATH=/Applications/Araxis\ Merge.app/Contents/Utilities:$PATH
 
 # chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+source $BREW/opt/chruby/share/chruby/chruby.sh
+source $BREW/opt/chruby/share/chruby/auto.sh
 
 # Ruby / Rails
 alias be="bundle exec"
