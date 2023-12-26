@@ -6,6 +6,12 @@ today() {
   if [ ! -f $filename ]; then
     echo `date '+%Y-%m-%d %r'` >> $filename
     echo "----------------------" >> $filename
+    echo "" >> $filename
+    echo "<sanitize me>" >> $filename
+    echo "" >> $filename
+    echo "start with gratitude" >> $filename
+    echo "" >> $filename
+    echo "</sanitize>" >> $filename
   fi
 
   subl $filename
