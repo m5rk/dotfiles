@@ -49,3 +49,5 @@
   tool = araxis
 [credential]
   helper = osxkeychain
+[user]
+	email = mark@mceahern
