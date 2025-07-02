@@ -17,7 +17,7 @@ today() {
   subl $filename
 }
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$($(brew --prefix)/bin/brew shellenv)"
 
 # my bin, then homebrew bin
 export BREW=`brew --prefix`
