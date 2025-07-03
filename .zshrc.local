@@ -17,7 +17,18 @@ today() {
   subl $filename
 }
 
-eval "$($(brew --prefix)/bin/brew shellenv)"
+# Load Homebrew shell environment, wherever it lives
+if command -v brew >/dev/null 2>&1; then
+  # Use the brew executable we just located, no hard-coding
+  eval "$("$(command -v brew)" shellenv)"
+else
+  # Fallback for fresh installs where brew isn't yet in PATH
+  if [[ -x /opt/homebrew/bin/brew ]]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  elif [[ -x /usr/local/bin/brew ]]; then
+    eval "$(/usr/local/bin/brew shellenv)"
+  fi
+fi
 
 # my bin, then homebrew bin
 export BREW=`brew --prefix`
